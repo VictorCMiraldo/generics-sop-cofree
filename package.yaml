@@ -1,0 +1,19 @@
+name:        generics-sop-cofree
+version:     0.0.0
+synopsis:    Enables deep representation within the `generics-sop` framework.
+description: This library provies the same trick that `simplistic-genercs` uses
+             but casts it in the `generics-sop` fashion. 
+             This enables deep representations through the `HolesAnn` free (co)monad;
+             Mutualy recursive datatypes are trivially supported.
+maintainer:  Victor Miraldo <v.cacciarimiraldo@gmail.com>
+github:      VictorCMiraldo/generics-sop-cofree
+category:    Other
+
+dependencies:
+  - base >= 4.9 && < 5
+  - generics-sop
+  - sop-core
+
+library:
+  source-dirs: src/
+  ghc-options: -O2 -Wall
